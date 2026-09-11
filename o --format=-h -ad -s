@@ -1,0 +1,53 @@
+[33m78143dd[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: commit (initial): Initial commit
+[33m761d2ba[m[33m ([m[1;31morigin/31-08-2026[m[33m, [m[1;32m31-08-2026[m[33m)[m HEAD@{1}: reset: moving to HEAD
+[33m761d2ba[m[33m ([m[1;31morigin/31-08-2026[m[33m, [m[1;32m31-08-2026[m[33m)[m HEAD@{2}: commit: updated header
+[33m5d7e8cd[m HEAD@{3}: commit: update file
+[33m4a7190b[m[33m ([m[1;31morigin/20-08-2026[m[33m, [m[1;32m20-08-2026[m[33m)[m HEAD@{4}: checkout: moving from 20-08-2026 to 31-08-2026
+[33m4a7190b[m[33m ([m[1;31morigin/20-08-2026[m[33m, [m[1;32m20-08-2026[m[33m)[m HEAD@{5}: commit: update file
+[33m892f4a9[m[33m ([m[1;31morigin/18-08-2026[m[33m, [m[1;32m18-08-2026[m[33m)[m HEAD@{6}: checkout: moving from 18-08-2026 to 20-08-2026
+[33m892f4a9[m[33m ([m[1;31morigin/18-08-2026[m[33m, [m[1;32m18-08-2026[m[33m)[m HEAD@{7}: commit: update file
+[33m1e5e41e[m[33m ([m[1;31morigin/14-08-2026[m[33m, [m[1;32m14-08-2026[m[33m)[m HEAD@{8}: checkout: moving from 14-08-2026 to 18-08-2026
+[33m1e5e41e[m[33m ([m[1;31morigin/14-08-2026[m[33m, [m[1;32m14-08-2026[m[33m)[m HEAD@{9}: commit: update file
+[33me088d69[m[33m ([m[1;31morigin/12-08-2026[m[33m, [m[1;32m12-08-2026[m[33m)[m HEAD@{10}: checkout: moving from 12-08-2026 to 14-08-2026
+[33me088d69[m[33m ([m[1;31morigin/12-08-2026[m[33m, [m[1;32m12-08-2026[m[33m)[m HEAD@{11}: commit: update file
+[33mcf222f0[m[33m ([m[1;31morigin/11-08-2026[m[33m, [m[1;32m11-08-2026[m[33m)[m HEAD@{12}: checkout: moving from 11-08-2026 to 12-08-2026
+[33mcf222f0[m[33m ([m[1;31morigin/11-08-2026[m[33m, [m[1;32m11-08-2026[m[33m)[m HEAD@{13}: commit: update file
+[33m5404e00[m[33m ([m[1;32m11-08-2025[m[33m)[m HEAD@{14}: checkout: moving from 11-08-2025 to 11-08-2026
+[33m5404e00[m[33m ([m[1;32m11-08-2025[m[33m)[m HEAD@{15}: commit: update file
+[33m762cbbb[m[33m ([m[1;31morigin/10-08-2026[m[33m, [m[1;32m10-08-2026[m[33m)[m HEAD@{16}: checkout: moving from 10-08-2026 to 11-08-2025
+[33m762cbbb[m[33m ([m[1;31morigin/10-08-2026[m[33m, [m[1;32m10-08-2026[m[33m)[m HEAD@{17}: commit: update file
+[33m3c729e1[m[33m ([m[1;31morigin/07-08-2026[m[33m, [m[1;32m07-08-2026[m[33m)[m HEAD@{18}: checkout: moving from 07-08-2026 to 10-08-2026
+[33m3c729e1[m[33m ([m[1;31morigin/07-08-2026[m[33m, [m[1;32m07-08-2026[m[33m)[m HEAD@{19}: commit: updated file
+[33mb07e213[m[33m ([m[1;31morigin/05-08-2026[m[33m, [m[1;32m05-08-2026[m[33m)[m HEAD@{20}: checkout: moving from 05-08-2026 to 07-08-2026
+[33mb07e213[m[33m ([m[1;31morigin/05-08-2026[m[33m, [m[1;32m05-08-2026[m[33m)[m HEAD@{21}: commit: updated file
+[33m3315fe6[m[33m ([m[1;31morigin/04-08-2026[m[33m, [m[1;32m04-08-2026[m[33m)[m HEAD@{22}: checkout: moving from 04-08-2026 to 05-08-2026
+[33m3315fe6[m[33m ([m[1;31morigin/04-08-2026[m[33m, [m[1;32m04-08-2026[m[33m)[m HEAD@{23}: commit: update file
+[33m4b4b617[m[33m ([m[1;31morigin/03-08-2026[m[33m, [m[1;32m31-07-2026[m[33m, [m[1;32m03-08-2026[m[33m)[m HEAD@{24}: checkout: moving from 03-08-2026 to 04-08-2026
+[33m4b4b617[m[33m ([m[1;31morigin/03-08-2026[m[33m, [m[1;32m31-07-2026[m[33m, [m[1;32m03-08-2026[m[33m)[m HEAD@{25}: checkout: moving from 31-07-2026 to 03-08-2026
+[33m4b4b617[m[33m ([m[1;31morigin/03-08-2026[m[33m, [m[1;32m31-07-2026[m[33m, [m[1;32m03-08-2026[m[33m)[m HEAD@{26}: commit: updated file
+[33me280869[m[33m ([m[1;31morigin/31-07-2026[m[33m, [m[1;32m30-07-2026[m[33m)[m HEAD@{27}: checkout: moving from 30-07-2026 to 31-07-2026
+[33me280869[m[33m ([m[1;31morigin/31-07-2026[m[33m, [m[1;32m30-07-2026[m[33m)[m HEAD@{28}: commit: update file
+[33mf8c2ab4[m[33m ([m[1;31morigin/30-07-2026[m[33m)[m HEAD@{29}: commit: updated file
+[33m700f17d[m HEAD@{30}: commit: updated file
+[33mbc8c3b1[m HEAD@{31}: commit: update file
+[33m1517bda[m[33m ([m[1;31morigin/29-07-2026[m[33m, [m[1;32m29-07-2026[m[33m)[m HEAD@{32}: checkout: moving from 29-07-2026 to 30-07-2026
+[33m1517bda[m[33m ([m[1;31morigin/29-07-2026[m[33m, [m[1;32m29-07-2026[m[33m)[m HEAD@{33}: commit: update banner
+[33mb0df24d[m HEAD@{34}: commit: update header file
+[33m31724b0[m[33m ([m[1;32m23-07-2026[m[33m)[m HEAD@{35}: checkout: moving from 23-07-2026 to 29-07-2026
+[33m31724b0[m[33m ([m[1;32m23-07-2026[m[33m)[m HEAD@{36}: commit: Initial project upload
+[33m53c0296[m[33m ([m[1;31morigin/23-07-2026[m[33m)[m HEAD@{37}: commit: update file
+[33m8a3f663[m[33m ([m[1;31morigin/22-07-2026[m[33m, [m[1;32m22-07-2026[m[33m)[m HEAD@{38}: checkout: moving from 22-07-2026 to 23-07-2026
+[33m8a3f663[m[33m ([m[1;31morigin/22-07-2026[m[33m, [m[1;32m22-07-2026[m[33m)[m HEAD@{39}: checkout: moving from 21-07-2026 to 22-07-2026
+[33m36bbdfb[m[33m ([m[1;31morigin/21-07-2026[m[33m, [m[1;32m21-07-2026[m[33m)[m HEAD@{40}: commit: 'update file
+[33m233f554[m[33m ([m[1;31morigin/20-07-2026[m[33m, [m[1;32m20-07-2026[m[33m)[m HEAD@{41}: checkout: moving from 20-07-2026 to 21-07-2026
+[33m233f554[m[33m ([m[1;31morigin/20-07-2026[m[33m, [m[1;32m20-07-2026[m[33m)[m HEAD@{42}: commit: updated file
+[33m3cd9d0f[m[33m ([m[1;31morigin/19-07-2026[m[33m, [m[1;32m19-07-2026[m[33m)[m HEAD@{43}: checkout: moving from 19-07-2026 to 20-07-2026
+[33m3cd9d0f[m[33m ([m[1;31morigin/19-07-2026[m[33m, [m[1;32m19-07-2026[m[33m)[m HEAD@{44}: checkout: moving from 17-07-2026-dup to 19-07-2026
+[33mbbb31ef[m[33m ([m[1;31morigin/17-07-2026-dup[m[33m, [m[1;32m17-07-2026-dup[m[33m)[m HEAD@{45}: commit: updated file
+[33maff94bf[m[33m ([m[1;31morigin/17-07-2026[m[33m, [m[1;32m17-07-2026[m[33m)[m HEAD@{46}: checkout: moving from 17-07-2026 to 17-07-2026-dup
+[33maff94bf[m[33m ([m[1;31morigin/17-07-2026[m[33m, [m[1;32m17-07-2026[m[33m)[m HEAD@{47}: commit: updated files
+[33m42bcee6[m HEAD@{48}: commit: updated file
+[33md7311fc[m HEAD@{49}: checkout: moving from main to 17-07-2026
+[33md7311fc[m HEAD@{50}: commit: updated file
+[33m002e4fc[m HEAD@{51}: Branch: renamed refs/heads/master to refs/heads/main
+[33m002e4fc[m HEAD@{53}: commit (initial): Initial commit

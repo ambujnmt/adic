@@ -1,49 +1,49 @@
 import React from 'react'
-import { FaGooglePlay, FaApple } from "react-icons/fa";
-
 
 export default function MobileApp() {
     return (
-        <>
-            <section className="container mt-[60px] mb-[60px]">
-                <div className="w-full rounded-2xl overflow-hidden bg-[url('/assets/img/app-bg.png')] bg-cover bg-center pt-[20px]">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-10 max-w-6xl mx-auto xl:px-[0px] px-[20px]">
-                        {/* Left content */}
-                        <div className="text-center md:text-left">
-                            <h2 className="xl:text-[44px] lg:text-[44px] text-[28px] font-bold text-white leading-[35px]">
-                                Search Property
-                            </h2>
-                            <h2 className="xl:text-[44px] lg:text-[44px] text-[28px] font-bold text-[var(--primary-color)]">
-                                On the Go
-                            </h2>
-                    
-                            <p className="text-[#DADADA] text-[16px] xl:text-[20px] lg:text-[20px] mt-4 max-w-xl">
-                                Download the BhumiManthan app for voice search, instant alerts,
-                                virtual tours, camera upload, and GPS-based property discovery.
-                            </p>
+        <div className="container my-[60px]">
+            <div
+                className="rounded-2xl overflow-hidden bg-cover bg-center pt-[30px] xl:pt-0 lg:pt-0 px-[15px] xl:px-[15px] lg:px-[15px] md:px-[15px]"
+                style={{ backgroundImage: "url('/assets/img/app-bg.png')" }}
+                >
+                <div className="flex flex-col md:flex-row items-center justify-between gap-10 max-w-6xl mx-auto">
+                    {/* Left content */}
+                    <div className="text-center md:text-left">
+                        <h2 className="text-2xl sm:text-[40px] font-bold text-white">
+                            Search Property
+                        </h2>
+                        <h2 className="text-2xl sm:text-[40px] font-bold text-[var(--primary-color)] leading-snug">
+                            On the Go
+                        </h2>
                 
-                            <div className="flex mt-6 justify-center md:justify-start gap-3">
-                                <div className="flex justify-center xl:justify-start">
-                                    <img
-                                        src="/assets/img/app-images.png"
-                                        alt="images"
-                                        className="h-auto w-[70%]"
-                                    />
-                                </div>
+                        <p className="text-[#DADADA] xl:text-[20px] lg:text-[20px] text-[15px] mt-4 max-w-xl">
+                            Download the BhumiManthan app for voice search, instant alerts,
+                            virtual tours, camera upload, and GPS-based property discovery.
+                        </p>
+            
+                        {/* Store badges */}
+                        <div className="flex mt-6 justify-center md:justify-start gap-3">
+                            <div>
+                                <img
+                                    src="/assets/img/app-images.png"
+                                    alt="image"
+                                    className="h-11 xl:w-auto lg:w-auto w-[80%] mx-auto"
+                                />
                             </div>
                         </div>
-                
-                        {/* Right phone mockup */}
-                        <div className="relative">
-                            <img
-                                src="/assets/img/app-img.png"
-                                alt="image"
-                                className="w-[250px] md:w-[250px] lg:w-[250px] mx-auto relative xl:right-[50px] lg:right-[50px] right-[0px] mt-[30px]"
-                            />
-                        </div>
+                    </div>
+            
+                    {/* Right phone mockup image */}
+                    <div className="flex-shrink-0">
+                        <img
+                            src="/assets/img/app-img.png"
+                            alt="image"
+                            className="xl:w-[220px] lg:w-[220px] md:w-[180px] w-[220px] sm:w-[260px] h-auto xl:pt-[50px] lg:pt-[50px] md:pt-[50px] mt-0"
+                        />
                     </div>
                 </div>
-            </section>
-        </>
+            </div>
+        </div>
     )
 }

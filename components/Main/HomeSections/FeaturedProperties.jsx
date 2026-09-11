@@ -7,16 +7,15 @@ import { FiMapPin } from "react-icons/fi";
 export default function FeaturedProperties() {
     return (
         <>
-            <section className="container-fluid px-[15px]">
-                {/* Header */}
+            <section className="container-fluid mx-[15px]">
                 <div className="grid grid-cols-12 gap-4 mt-[60px]">
-                    <div className="hidden lg:block lg:col-span-1"></div>
-                    <div className="col-span-12 xl:col-span-10 lg:col-span-10 gap-4 flex flex-col sm:flex-row items-start sm:items-center justify-between">
+                    <div className="col-span-1"></div>
+                    <div className="col-span-12 xl:col-span-10 lg:col-span-10 gap-4 xl:flex lg:flex block items-center justify-between">
                         <div className="">
-                            <h2 className="text-[22px] sm:text-[28px] font-bold text-[var(--text-color1)]">
+                            <h2 className="text-[28px] font-bold text-[var(--text-color1)]">
                                 Featured Properties
                             </h2>
-                            <p className="text-[14px] sm:text-[16px] text-[var(--text-color2)] mb-4">
+                            <p className="text-[16px] text-[var(--text-color2)] mb-4">
                                 Handpicked residential, commercial and land listings across prime Indian micro-markets
                             </p>
                         </div>
@@ -26,12 +25,11 @@ export default function FeaturedProperties() {
                             </Link>
                         </div>
                     </div>
-                    <div className="hidden lg:block lg:col-span-1"></div>
+                    <div className="col-span-1"></div>
                 </div>
 
                 <div className="grid grid-cols-12 gap-4 mt-[30px]">
-                    {/* Home Loan Widget */}
-                    <div className="col-span-12 sm:col-span-6 lg:col-span-1 order-1 lg:order-1">
+                    <div className="col-span-12 xl:col-span-1 lg:col-span-1 md:col-span-6">
                         <div className="bg-[var(--secondary-color)] p-2 rounded-lg">
                             <h6 className="text-[var(--primary-color)] text-[10px] mb-[10px] text-center">LOW INTEREST</h6>
                             <h3 className="text-white text-[24px] font-bold leading-[33px] mb-[10px] text-center">HOME LOAN</h3>
@@ -43,17 +41,14 @@ export default function FeaturedProperties() {
                             <p className="text-white/80 text-[10px] mb-[5px]">Lowest Interest</p>
                             <p className="text-white/80 text-[10px] mb-[5px]">Minimal Docs</p>
                             <p className="text-white/80 text-[10px] mb-[5px]">Trusted Partners</p>
-                            <Link href="#" className="mt-[20px] flex items-center justify-center hover:bg-[var(--secondary-color)] text-white px-1 py-2 rounded-lg border text-[11px] font-medium leading-[100%] bg-[var(--primary-color)] hover:text-white transition-all duration-500 ease-in-out">
+                            <Link href="#" className="mt-[20px] flex items-center hover:bg-[var(--secondary-color)] text-white px-1 py-2 rounded-lg border text-[11px] font-medium leading-[100%] bg-[var(--primary-color)] hover:text-white transition-all duration-500 ease-in-out">
                                 APPLY NOW
                             </Link>
                             <img src="/assets/img/property-img.png" alt="Featured Properties" className="w-full h-[70px] object-cover mt-4 rounded-lg" />
                         </div>
                     </div>
-
-                    {/* Property Cards */}
-                    <div className="col-span-12 sm:col-span-12 lg:col-span-10 gap-4 order-3 lg:order-2">
+                    <div className="col-span-12 xl:col-span-10 lg:col-span-10 gap-4">
                         <div className="grid grid-cols-12 gap-4">
-
                             <div className="col-span-12 xl:col-span-3 lg:col-span-3 md:col-span-6">
                                 <div className="bg-white rounded-lg shadow-md overflow-hidden relative mb-4">
                                     <img src="/assets/img/prop-1.png" alt="Property 1" className="w-full h-48 object-cover" />
@@ -330,17 +325,14 @@ export default function FeaturedProperties() {
                                     </div>
                                 </div>
                             </div>
-
-                            <div className="col-span-12 order-4">
+                            <div className="col-span-12">
                                 <Link href="#" className="flex items-center justify-center hover:bg-[var(--secondary-color)] text-[var(--secondary-color)] px-3 py-4 rounded-lg border text-[15px] font-medium leading-[100%] border-[var(--secondary-color)] hover:text-white transition-all duration-500 ease-in-out w-max mx-auto">
                                     View More Properties
                                 </Link>
                             </div>
                         </div>
                     </div>
-
-                    {/* Gold Loan Widget */}
-                    <div className="col-span-12 sm:col-span-6 lg:col-span-1 order-2 lg:order-3">
+                    <div className="col-span-12 xl:col-span-1 lg:col-span-1 md:col-span-6">
                         <div className="bg-[var(--secondary-color)] p-2 rounded-lg">
                             <h6 className="text-[var(--primary-color)] text-[10px] mb-[10px] text-center">GET INSTANT</h6>
                             <h3 className="text-white text-[24px] font-bold leading-[33px] mb-[10px] text-center">GOLD LOAN</h3>
@@ -352,7 +344,7 @@ export default function FeaturedProperties() {
                             <p className="text-white/80 text-[10px] mb-[5px]">Minimal Documents</p>
                             <p className="text-white/80 text-[10px] mb-[5px]">Lowest Interest</p>
                             <p className="text-white/80 text-[10px] mb-[5px]">Trusted Partners</p>
-                            <Link href="#" className="mt-[20px] flex items-center justify-center hover:bg-[var(--secondary-color)] text-white px-1 py-2 rounded-lg border text-[11px] font-medium leading-[100%] bg-[var(--primary-color)] hover:text-white transition-all duration-500 ease-in-out">
+                            <Link href="#" className="mt-[20px] flex items-center hover:bg-[var(--secondary-color)] text-white px-1 py-2 rounded-lg border text-[11px] font-medium leading-[100%] bg-[var(--primary-color)] hover:text-white transition-all duration-500 ease-in-out">
                                 APPLY NOW
                             </Link>
                             <img src="/assets/img/gold-loan.png" alt="Featured Properties" className="w-full h-[70px] object-cover mt-4 rounded-lg" />
