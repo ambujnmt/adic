@@ -13,7 +13,7 @@ import MobileApp from './HomeSections/MobileApp';
 
 export default function Body() {
  
-
+ 
   return (
     <>
       <HeroCarousel />

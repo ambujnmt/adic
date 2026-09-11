@@ -23,7 +23,7 @@ export default function Blogs() {
                     <FiArrowRight className="text-base" />
                 </a>
             </div>
-
+ 
 
             <div className="grid grid-cols-12 gap-4 mt-[30px]">
                 <div className="col-span-12 xl:col-span-4 lg:col-span-4 md:col-span-6">

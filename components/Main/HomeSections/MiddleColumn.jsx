@@ -26,7 +26,7 @@ export default function MiddleColumn() {
                     {/* Verified Listings */}
                     <div className="flex items-center gap-3 lg:px-4">
                     <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center rounded-full border border-indigo-200 text-indigo-700">
-                        <FaCheckCircle size={15} />
+                        <FaCheckCircle size={15} /> 
                     </div>
                     <div>
                         <p className="text-[14px] font-bold text-[var(--text-color1)]">Verified Listings</p>
