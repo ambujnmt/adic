@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function MobileApp() {
     return (
-        <div className="container my-[60px]">
+        <div className="container my-[60px]"> 
             <div
                 className="rounded-2xl overflow-hidden bg-cover bg-center pt-[30px] xl:pt-0 lg:pt-0 px-[15px] xl:px-[15px] lg:px-[15px] md:px-[15px]"
                 style={{ backgroundImage: "url('/assets/img/app-bg.png')" }}
