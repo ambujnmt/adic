@@ -12,7 +12,7 @@ import HomeAccordian from './HomeSections/HomeAccordian';
 
 
 export default function Body() {
- 
+  
  
   return (
     <>
