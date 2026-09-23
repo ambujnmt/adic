@@ -11,7 +11,7 @@ export default function HomeAccordian() {
     };
 
 
-    return (
+    return ( 
         <>
             <section className="mt-[50px] bg-[#FEFAE6] xl:p-[80px] lg:p-[80px] py-[40px]">
                 <div className="container">
