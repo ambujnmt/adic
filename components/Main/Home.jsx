@@ -8,10 +8,10 @@ import TopBar from '../Menu/TopBar'
 export default function Home() {
   return ( 
     <section className='homePage'>
-      {/* <TopBar /> */}
+      <TopBar />
       <Header />
       <Body />
-      <Footer />
+      {/* <Footer /> */}
     </section>
   )
 }

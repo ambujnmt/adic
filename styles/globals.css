@@ -301,26 +301,26 @@ body .table-wrapper::-webkit-scrollbar {
 
 /* harry css */
 h1, h2, h3, h4, h5{
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Cormorant Garamond", serif;
 }
  
 h6, p{
-  font-family:"Inter", sans-serif ;
+  font-family: "Karla", sans-serif;
 }
 
 a{
-  font-family:"Inter", sans-serif ;
+  font-family: "Karla", sans-serif;
 }
 
 button{
-  font-family:"Inter", sans-serif ;
+  font-family: "Karla", sans-serif;
 }
  
 
 :root{
-  --primary-color: #E87722; 
-  --secondary-color: #001737;
-  --text-color1: #1A1F36;
+  --primary-color: #102240; 
+  --secondary-color: #93753B;
+  --text-color1: #585B5F;
   --text-color2: #62748E;
   --text-color3: #283A86;
   --dark-bg: #05111B;

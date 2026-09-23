@@ -6,72 +6,31 @@ import { HiOutlineMail } from "react-icons/hi";
 
 export default function TopBar() {
     return (
-        <section className="w-full border-b border-b-[#ccc] py-[6px] text-white text-xs md:text-sm">
+        <section className="w-full py-[6px] text-white text-xs md:text-sm">
             <div className="container">
-                <div className="grid grid-cols-12 gap-6 items-center">
-                    <div className="col-span-4">
-                        <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3"> 
-                            <span className="flex items-center gap-1.5">
-                                <FaPhoneAlt className="text-[var(--primary-color)]" size={12} />
-                                <Link href="tel:7567437594" className="hover:text-[var(--primary-color)] text-black font-light text-[14px]">
-                                    7567437594 &nbsp;
-                                </Link>
-                                <span className="hidden md:inline text-black/40">|</span>
-                            </span>
-
-                            <span className="flex items-center gap-1.5">
-                                <HiOutlineMail className="text-[var(--primary-color)]" size={14} />
-                                <Link href="mailto:cdoe@mituniversity.edu.in" className="hover:text-[var(--primary-color)] text-black font-light text-[14px]">
-                                    cdoe@mituniversity.edu.in
-                                </Link>
-                            </span>
+                <div className="border-b border-b-[#ccc] bg-[#f8f6ee]">
+                    <div className="grid grid-cols-12 gap-6 items-center">
+                        <div className="col-span-4">
+                            <div className="flex flex-wrap items-center gap-2 md:gap-3"> 
+                                <span className="flex items-center gap-1.5"> 
+                                    <p className="text-[#585B5F] font-normal text-[14px]">
+                                        3500 Corinth Parkway, Suite #200Corinth, TX 76208
+                                    </p>
+                                </span> 
+                            </div>
                         </div>
-                    </div>
-                    <div className="col-span-4 block m-auto">
-                        <Link href="#" className="flex items-center gap-3 shrink-0">
-                        <img
-                            src="/assets/images/logo2.svg"
-                            alt="image"
-                        />
-                        </Link>
-                    </div>
-                    <div className="col-span-4">
-                        <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3">
-                            <Link href="#" className="hover:text-[var(--primary-color)] text-black font-light text-[14px] transition-all duration-300 ease-in-out">
-                                Campus Life
-                            </Link>
-                            <span className="text-black/40">|</span>
-                            <Link href="#" className="hover:text-[var(--primary-color)] text-black font-light text-[14px] transition-all duration-300 ease-in-out">
-                                Research
-                            </Link>
-                            <span className="text-black/40">|</span>
-                            <Link href="#" className="hover:text-[var(--primary-color)] text-black font-light text-[14px] transition-all duration-300 ease-in-out">
-                                All Programs
-                            </Link>
-
-                            <span className="flex items-center gap-3 ml-2"> 
-                                <Link href="#"
-                                aria-label="Facebook"
-                                className="hover:text-[#ccc] text-[var(--primary-color)] transition-colors"
-                                >
-                                    <FaFacebookF size={15} />
+                        <div className="col-span-8">
+                            <div className="flex flex-wrap items-center justify-end gap-2 md:gap-3">
+                                <Link href="#" className="hover:text-[var(--primary-color)] text-[#102240] font-normal text-[14px] transition-all duration-300 ease-in-out uppercase">
+                                    <FaPhoneAlt className="text-[var(--primary-color)]" size={12} />&nbsp; Call Now
                                 </Link> 
-                                <Link href="#"
-                                aria-label="Instagram"
-                                className="hover:text-[#ccc] text-[var(--primary-color)] transition-colors"
-                                >
-                                    <FaInstagram size={15} />
+                                <Link href="#" className="bg-[var(--primary-color)] py-3 px-3 text-white font-light text-[14px] transition-all duration-300 ease-in-out hover:text-white hover:bg-[var(--secondary-color)] uppercase">
+                                    Request a Consultation
                                 </Link> 
-                                <Link href="#"
-                                aria-label="LinkedIn"
-                                className="hover:text-[#ccc] text-[var(--primary-color)] transition-colors"
-                                >
-                                    <FaLinkedinIn size={15} />
-                                </Link>
-                            </span>
+                            </div>
                         </div>
-                    </div>
-                </div> 
+                    </div> 
+                </div>
             </div>
         </section>
     );
