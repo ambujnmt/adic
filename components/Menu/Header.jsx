@@ -336,7 +336,7 @@ export default function Header() {
             >
               {/* Apply Now &nbsp; <FaHandPointer size={14} /> */}
               <img
-                src="/assets/img/logo.png"
+                src="/assets/image/logo.png"
                 alt="image"
                 className="lg:w-[200px] w-[130px] h-[auto]"
               />

@@ -13,9 +13,9 @@ export default function HomeAccordian() {
 
     return ( 
         <>
-            <section className="mt-[50px] bg-[#FEFAE6] xl:p-[80px] lg:p-[80px] py-[40px]">
+            <section className="mt-[50px] bg-[#f7f5f2] xl:p-[80px] lg:p-[80px] py-[40px]">
                 <div className="container">
-                    <div className="grid grid-cols-12 gap-4">
+                    <div className="grid grid-cols-12 xl:gap-10 lg:gap-10 gap-4">
                         <div className="xl:col-span-5 lg:col-span-5 md:col-span-5 col-span-12">
                             <h6 className="text-[var(--secondary-color)] text-[18px] uppercase font-bold"> Frequently Asked </h6>
                             <h3 className="text-[var(--primary-color)] xl:text-[44px] lg:text-[44px] text-[30px] xl:leading-[50px] lg:leading-[50px] leading-[35px] font-semibold">Questions patients ask us most.</h3>
