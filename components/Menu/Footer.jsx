@@ -6,96 +6,78 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { Link, LinkIcon } from '@heroui/react';
 import { FaXTwitter } from "react-icons/fa6"; 
 import { FaCheck } from "react-icons/fa";
+import { FaPhoneAlt, FaRegClock, FaMapMarkerAlt } from "react-icons/fa";
 
-
-
-const QuickLinks = [
-  {
-    title: "About Us",
-    href: "#",
-  },
-  {
-    title: "Contact Us",
-    href: "#",
-  },
-  {
-    title: "Careers",
-    href: "#",
-  },
-  {
-    title: "Blog & Articles ",
-    href: "#",
-  }
-];
+ 
 
 const OurServicesLinks = [
   {
-    title: "Buy Properties",
+    title: "About ADIC",
     href: "#",
   },
   {
-    title: "Rent Properties",
+    title: "Dental Implants",
     href: "#",
   },
   {
-    title: "Commercial Spaces",
+    title: "Cosmetic Dentistry",
     href: "#",
   },
   {
-    title: "Land & Plots",
+    title: "General Dentistry",
     href: "#",
   },
   {
-    title: "Builder Directory",
+    title: "Contact",
     href: "#",
   },
   {
-    title: "Post Property Free",
+    title: "Smile Gallery",
     href: "#",
   }
 ];
 
 const LoansFinanceLinks = [
   {
-    title: "Home Loans",
+    title: "Dental Implants",
     href: "#",
   },
   {
-    title: "Gold Loans",
+    title: "Full-Arch / All-on-X",
     href: "#",
   },
   {
-    title: "Property Valuation",
+    title: "Cosmetic Veneers",
     href: "#",
   },
   {
-    title: "Legal Verification",
+    title: "Smile Makeovers",
     href: "#",
   },
   {
-    title: "Escrow Services",
+    title: "Crowns & Bridges",
     href: "#",
   },
   {
-    title: "Trusted Partners",
+    title: "Preventive Care",
     href: "#",
   }
-];
+]; 
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#1A2340] text-gray-200">
+    <footer className="w-full bg-gradient-to-r from-[#0B1F3A] to-[#0C131D] text-gray-200">
       <div className="container py-12">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-10">
+        <div className="grid grid-cols-12 xl:gap-10 lg:gap-10 gap-4">
           {/* About Us */}
-          <div className="col-span-2 sm:col-span-1">
+          <div className="xl:col-span-3 lg:col-span-3 md:col-span-6 col-span-12">
             <img 
-              src="/assets/img/footer-logo.png"
+              src="/assets/image/logo.png"
               alt="image"
               className="w-[80%] h-auto mb-4"
             />
-            <p className="text-[#fff]/80 text-[13px]">
-              bhumimanthan.com is India's leading unified real estate platform designed to make finding, buying, renting and growing assets streamlined and trustworthy.
+            <p className="text-[#fff]/80 xl:text-[16px] lg:text-[16px] text-[16px] font-normal xl:leading-[26px] lg:leading-[26px] leading-[22px] mb-2">
+              Aesthetic Dentistry & Implant Center Serving Corinth, Denton, Lantana, and surrounding DFW communities.
             </p>
 
             {/* Logo + Stay Connected */}
@@ -132,40 +114,19 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
-          {/* About CDOE */}
-          <div>
-            <h6 className="text-[#fff] font-bold text-[15px] mb-4 uppercase">
-              Quick Links
-            </h6>
-            <ul className="space-y-2">
-              {QuickLinks.map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href={item.href}
-                    className="flex items-start gap-1.5 text-[#fff]/80 text-[13px] font-normal hover:text-[var(--primary-color)] transition-colors pb-1"
-                  >
-                    <FiChevronRight className="mt-1 shrink-0 w-3.5 h-3.5 text-[var(--primary-color)]" />
-                    <span>{item.title}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Academics */}
-          <div>
-            <h6 className="text-[#fff] font-bold text-[15px] mb-4 uppercase">
-              Our Services
-            </h6>
+ 
+          {/* Navigation */}
+          <div className="xl:col-span-3 lg:col-span-3 md:col-span-6 col-span-12">
+            <h5 className="text-[var(--secondary-color)] font-bold text-[20px] mb-4 uppercase">
+              Navigation
+            </h5>
             <ul className="space-y-2">
               {OurServicesLinks.map((item, i) => (
                 <li key={i}>
                   <Link
                     href={item.href}
-                    className="flex items-start gap-1.5 text-[#fff]/80 text-[13px] font-normal hover:text-[var(--primary-color)] transition-colors pb-1"
-                  >
-                    <FiChevronRight className="mt-1 shrink-0 w-3.5 h-3.5 text-[var(--primary-color)]" />
+                    className="flex text-[#fff]/80 hover:text-[var(--secondary-color)] pb-1 xl:text-[16px] lg:text-[16px] text-[16px] font-normal xl:leading-[26px] lg:leading-[26px] leading-[22px]"
+                  > 
                     <span>{item.title}</span>
                   </Link>
                 </li>
@@ -173,19 +134,18 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Student Resources */}
-          <div>
-            <h6 className="text-[#fff] font-bold text-[15px] mb-4 uppercase">
-              Loans & Finance
-            </h6>
+          {/* Treatments */}
+          <div className="xl:col-span-3 lg:col-span-3 md:col-span-6 col-span-12">
+            <h5 className="text-[var(--secondary-color)] font-bold text-[20px] mb-4 uppercase">
+              Treatments
+            </h5>
             <ul className="space-y-2">
               {LoansFinanceLinks.map((item, i) => (
                 <li key={i}>
                   <Link
                     href={item.href}
-                    className="flex items-start gap-1.5 text-[#fff]/80 text-[13px] font-normal hover:text-[var(--primary-color)] transition-colors pb-1"
-                  >
-                    <FiChevronRight className="mt-1 shrink-0 w-3.5 h-3.5 text-[var(--primary-color)]" />
+                    className="flex text-[#fff]/80 hover:text-[var(--secondary-color)] pb-1 xl:text-[16px] lg:text-[16px] text-[16px] font-normal xl:leading-[26px] lg:leading-[26px] leading-[22px]"
+                  > 
                     <span>{item.title}</span>
                   </Link>
                 </li>
@@ -194,134 +154,58 @@ export default function Footer() {
           </div>
 
           {/* Contact Us */}
-          <div className="col-span-2 sm:col-span-3 lg:col-span-1">
-            <h6 className="text-[#fff] font-bold text-[15px] mb-4 uppercase">
-              Contact Us
-            </h6>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-2.5 text-sm text-gray-200"> 
-                <Link href="javascript:void(0);" className="text-[#fff]/80 text-[13px] font-normal hover:text-[var(--primary-color)] transition-colors">
-                  123 2nd Floor, Sector 62, Noida, Utter Pradesh- 201301
-                </Link>
-              </li>
-              <li className="flex items-start gap-2.5 text-sm text-gray-200"> 
-                <Link
-                  href="javascript:void(0);"
-                  className="text-[#fff]/80 text-[13px] font-normal hover:text-[var(--primary-color)] transition-colors break-all"
-                >
-                  +91 98765 43201
-                </Link>
-              </li>
-              <li className="flex items-start gap-2.5 text-sm text-gray-200"> 
-                <Link
-                  href="javascript:void(0);"
-                  className="text-[#fff]/80 text-[13px] font-normal hover:text-[var(--primary-color)] transition-colors"
-                >
-                  info@bhumimanthan.com
-                </Link>
-              </li>
-              <li className="flex items-start gap-2.5 text-sm text-[15px] text-white font-normal hover:text-white"> 
-                <span className="leading-relaxed text-[#fff]/80 text-[13px]">
-                  Mon - Sat : 10AM- 7:00 PM
-                </span>
-              </li>
+          <div className="xl:col-span-3 lg:col-span-3 md:col-span-6 col-span-12">
+            <h5 className="text-[var(--secondary-color)] font-bold text-[20px] mb-4 uppercase">
+                Contact
+            </h5>
+            <ul className="space-y-4">
+                {/* Hours */}
+                <li className="flex items-start gap-2.5 text-sm text-gray-200">
+                    <Link
+                        href="javascript:void(0);"
+                        className="text-[#fff]/80 hover:text-[var(--secondary-color)] pb-1 xl:text-[16px] lg:text-[16px] text-[16px] font-normal xl:leading-[26px] lg:leading-[26px] leading-[22px] flex items-start gap-2.5"
+                    >
+                        <FaRegClock size={16} className="text-[#c9a25f] flex-shrink-0 mt-[5px]" />
+                        <span>Mon–Thu 9:00am to 5:00pm ( Fri 9:00am to 1:00pm)</span>
+                    </Link>
+                </li>
+
+                {/* Address */}
+                <li className="flex items-start gap-2.5 text-sm text-gray-200">
+                    <Link
+                        href="javascript:void(0);"
+                        className="text-[#fff]/80 hover:text-[var(--secondary-color)] pb-1 xl:text-[16px] lg:text-[16px] text-[16px] font-normal xl:leading-[26px] lg:leading-[26px] leading-[22px] flex items-start gap-2.5"
+                    >
+                        <FaMapMarkerAlt size={16} className="text-[#c9a25f] flex-shrink-0 mt-[5px]" />
+                        <span>3500 Corinth Parkway, Suite #200 Corinth, TX 76208</span>
+                    </Link>
+                </li>
+
+                {/* Phone */}
+                <li className="flex items-start gap-2.5 text-sm text-gray-200">
+                    <Link
+                        href="javascript:void(0);"
+                        className="text-[#fff]/80 hover:text-[var(--secondary-color)] pb-1 xl:text-[16px] lg:text-[16px] text-[16px] font-normal xl:leading-[26px] lg:leading-[26px] leading-[22px] flex items-center gap-2.5"
+                    >
+                        <FaPhoneAlt size={16} className="text-[#c9a25f] flex-shrink-0" />
+                        <span>(940) 489-8181</span>
+                    </Link>
+                </li>
             </ul>
-          </div>
+        </div>
         </div>
       </div>
 
-      {/* Bottom bar */}
-      <div className="container">
-        <div className="border-t border-white/20 lg:py-4 pb-[50px] pt-[10px]">
-          <div className="grid grid-cols-12 gap-4">
-            <div className="col-span-12">
-              <h6 className="text-[#fff] font-bold text-[15px] mb-4 uppercase">
-                Major Cities in India
-              </h6>
-            </div>
-          </div>
-          <div className="grid grid-cols-12 gap-4">
-            <div className="col-span-12">
-              <ul className="flex flex-wrap gap-2">
-                <li className="bg-white/10 text-[#fff]/80 text-[12px] px-3 py-1 rounded-sm mb-2"> 
-                  Mumbai
-                </li>
-                <div className="text-white text-[20px] px-1 font-thin relative top-[-3px]">|</div>
-                <li className="bg-white/10 text-[#fff]/80 text-[12px] px-3 py-1 rounded-sm mb-2"> 
-                  Delhi NCR
-                </li>
-                <div className="text-white text-[20px] px-1 font-thin relative top-[-3px]">|</div>
-                <li className="bg-white/10 text-[#fff]/80 text-[12px] px-3 py-1 rounded-sm mb-2"> 
-                  Noida
-                </li>
-                <div className="text-white text-[20px] px-1 font-thin relative top-[-3px]">|</div>
-                <li className="bg-white/10 text-[#fff]/80 text-[12px] px-3 py-1 rounded-sm mb-2"> 
-                  Gurugram
-                </li>
-                <div className="text-white text-[20px] px-1 font-thin relative top-[-3px]">|</div>
-                <li className="bg-white/10 text-[#fff]/80 text-[12px] px-3 py-1 rounded-sm mb-2"> 
-                  Bengaluru
-                </li>
-                <div className="text-white text-[20px] px-1 font-thin relative top-[-3px]">|</div>
-                <li className="bg-white/10 text-[#fff]/80 text-[12px] px-3 py-1 rounded-sm mb-2"> 
-                  Pune
-                </li>
-                <div className="text-white text-[20px] px-1 font-thin relative top-[-3px]">|</div>
-                <li className="bg-white/10 text-[#fff]/80 text-[12px] px-3 py-1 rounded-sm mb-2"> 
-                  Hyderabad
-                </li>
-                <div className="text-white text-[20px] px-1 font-thin relative top-[-3px]">|</div>
-                <li className="bg-white/10 text-[#fff]/80 text-[12px] px-3 py-1 rounded-sm mb-2"> 
-                  Kolkata
-                </li>
-                <div className="text-white text-[20px] px-1 font-thin relative top-[-3px]">|</div>
-                <li className="bg-white/10 text-[#fff]/80 text-[12px] px-3 py-1 rounded-sm mb-2"> 
-                  Chennai
-                </li>
-                <div className="text-white text-[20px] px-1 font-thin relative top-[-3px]">|</div>
-                <li className="bg-white/10 text-[#fff]/80 text-[12px] px-3 py-1 rounded-sm mb-2"> 
-                  Jaipur
-                </li>
-                <div className="text-white text-[20px] px-1 font-thin relative top-[-3px]">|</div>
-                <li className="bg-white/10 text-[#fff]/80 text-[12px] px-3 py-1 rounded-sm mb-2"> 
-                  Lucknow
-                </li>
-                <div className="text-white text-[20px] px-1 font-thin relative top-[-3px]">|</div>
-                <li className="bg-white/10 text-[#fff]/80 text-[12px] px-3 py-1 rounded-sm mb-2"> 
-                  Ahmedabad
-                </li>
-                <div className="text-white text-[20px] px-1 font-thin relative top-[-3px]">|</div>
-                <li className="bg-white/10 text-[#fff]/80 text-[12px] px-3 py-1 rounded-sm mb-2"> 
-                  Chandigarh
-                </li>
-                <div className="text-white text-[20px] px-1 font-thin relative top-[-3px]">|</div>
-                <li className="bg-white/10 text-[#fff]/80 text-[12px] px-3 py-1 rounded-sm mb-2"> 
-                  Kochi
-                </li>
-                <div className="text-white text-[20px] px-1 font-thin relative top-[-3px]">|</div>
-                <li className="bg-white/10 text-[#fff]/80 text-[12px] px-3 py-1 rounded-sm mb-2"> 
-                  Visakhapatnam
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      
 
       <div className="container">
         <div className="lg:py-4 xl:pb-[20px] pb-[10px] pt-[10px] border-t border-white/20 xl:mt-[40px] mt-[0px] xl:flex items-center justify-between text-center">
-          <p className="text-[#fff]/80 text-[13px]">Copyright © 2025 bhumimanthan.com. All rights reserved.</p>
+          <p className="text-[#fff]/80 text-[13px]">© 2026 Aesthetic Dentistry & Implant Center. All rights reserved.</p>
           <div className="">
             <Link
               href="#"
               className="text-[#fff]/80 text-[13px] font-normal hover:text-[var(--primary-color)] transition-colors mr-5">
               Privacy Policy
-            </Link>
-            <Link
-              href="#"
-              className="text-[#fff]/80 text-[13px] font-normal hover:text-[var(--primary-color)] transition-colors">
-              Terms & Conditions
             </Link>
           </div>
         </div>

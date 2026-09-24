@@ -5,28 +5,31 @@ import { FaStar, FaUserCircle } from "react-icons/fa";
 
 const CARDS = [
     {
-        id: "rahul-sharma",
-        name: "Rahul Sharma",
-        role: "Property Buyer, Noida",
+        id: "Harry",
+        name: "Harry",
+        role: "Marketing Manager",
         rating: 5,
+        image: "/assets/image/testi-img1.png",
         review:
-        "Finding an apartment in Sector 137 Noida was incredibly smooth. bhumimanthan.com helped us connect with verified agents and schedule tours quickly.",
+            "Finding an apartment in Sector 137 Noida was incredibly smooth. bhumimanthan.com helped us connect with verified agents and schedule tours quickly.",
     },
     {
-        id: "priya-verma",
-        name: "Priya Verma",
-        role: "Property Buyer, Gurugram",
+        id: "Sunio",
+        name: "Sunio",
+        role: "Doctor",
         rating: 5,
+        image: "/assets/image/testi-img2.png",
         review:
-        "The listings were genuine and well documented. We closed our deal within two weeks without any hassle at all.",
+        "The experience was exceptional from beginning to end. I appreciated how clearly everything was explained and how personalized my treatment plan felt.",
     },
     {
-        id: "amit-khanna",
-        name: "Amit Khanna",
-        role: "Property Investor, Delhi",
+        id: "Sizu",
+        name: "Sizuss",
+        role: "Student",
         rating: 4,
+        image: "/assets/image/testi-img3.png",
         review:
-        "Great platform for comparing prices across localities. The support team was quick to respond to every query we had.",
+        "I finally feel confident smiling again. The team made the entire process feel comfortable, thoughtful, and focused on what was best for me",
     },
 ];
 
@@ -91,15 +94,15 @@ export default function HomeTestimonial() {
     };
 
     return (
-        <section className="w-full bg-[#F5F7FA] py-14 px-4 sm:px-8 mt-[60px]">
+        <section className="w-full py-14 mt-[40px]">
             <div className="container">
                 <div className="grid grid-cols-12 mb-6">
                     <div className="col-span-12 text-center">
-                        <h2 className="text-[28px] font-bold text-[var(--text-color1)]"> 
-                            Trusted by Thousands of Happy Landlords & Buyers
+                        <h2 className="text-[var(--primary-color)] xl:text-[44px] lg:text-[44px] text-[30px] xl:leading-[50px] lg:leading-[50px] leading-[35px] font-semibold"> 
+                            Testimonials
                         </h2>
-                        <p className="text-[16px] text-[var(--text-color2)] mb-4"> 
-                            Here is what our clients have to say about their search experience with bhumimanthan.com
+                        <p className="xl:text-[20px] lg:text-[20px] text-[16px] font-normal text-[var(--text-color1)] xl:leading-[30px] lg:leading-[30px] leading-[24px]"> 
+                            Their Stories. Their Smiles
                         </p>
                     </div>
                 </div>
@@ -121,33 +124,45 @@ export default function HomeTestimonial() {
                                 className="shrink-0 px-3"
                                 style={{ width: `${100 / cardsPerView}%` }}
                             >
-                                <div className="rounded-2xl p-5 bg-white border border-gray-200 shadow-sm h-full">
+                                <div className="rounded-2xl p-5 bg-[#f7f5f2] border border-gray-200 shadow-sm h-full">
+                                    {/* Reviewer Info - avatar + name + role */}
+                                    <div className="flex items-center gap-3 mb-4">
+                                        {card.image ? (
+                                            <img
+                                                src={card.image}
+                                                alt={card.name}
+                                                className="w-11 h-11 rounded-full object-cover flex-shrink-0"
+                                            />
+                                        ) : (
+                                            <div className="w-11 h-11 flex-shrink-0 flex items-center justify-center rounded-full bg-purple-100 text-purple-500">
+                                                <FaUserCircle size={24} />
+                                            </div>
+                                        )}
+                                        <div>
+                                            <h5 className="xl:text-[24pxpx] lg:text-[24pxpx] text-[16px] font-normal text-[var(--text-color1)] xl:leading-[26px] lg:leading-[26px] leading-[22px]">
+                                                {card.name}
+                                            </h5>
+                                            <p className="xl:text-[14px] lg:text-[14px] text-[16px] font-normal text-[var(--text-color1)] xl:leading-[26px] lg:leading-[26px] leading-[22px]">
+                                                {card.role}
+                                            </p>
+                                        </div>
+                                    </div>
+
                                     {/* Stars */}
                                     <div className="flex gap-1 mb-3">
                                         {Array.from({ length: 5 }).map((_, i) => (
                                             <FaStar
                                                 key={i}
                                                 size={14}
-                                                className={i < card.rating ? "text-yellow-400" : "text-gray-200"}
+                                                className={i < card.rating ? "text-[var(--secondary-color)]" : "text-gray-200"}
                                             />
                                         ))}
                                     </div>
-                    
+
                                     {/* Review */}
-                                    <p className="text-[14px] text-[var(--text-color1)] leading-relaxed mb-5">
-                                        "{card.review}"
+                                    <p className="xl:text-[16px] lg:text-[16px] text-[16px] font-normal text-[var(--text-color1)] xl:leading-[26px] lg:leading-[26px] leading-[22px]">
+                                        {card.review}
                                     </p>
-                    
-                                    {/* Reviewer */}
-                                    <div className="flex items-center gap-3">
-                                        <div className="w-9 h-9 flex-shrink-0 flex items-center justify-center rounded-full bg-purple-100 text-purple-500">
-                                            <FaUserCircle size={22} />
-                                        </div>
-                                        <div>
-                                            <p className="text-[15px] font-bold text-[var(--text-color1)]">{card.name}</p>
-                                            <p className="text-[12px] text-[var(--text-color2)]">{card.role}</p>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         ))}
