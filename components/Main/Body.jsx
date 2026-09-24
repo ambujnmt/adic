@@ -16,7 +16,7 @@ import Location from './HomeSections/Location';
 
 export default function Body() {
   
- 
+
   return (
     <>
       <HeroCarousel />

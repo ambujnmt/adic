@@ -322,7 +322,7 @@ export default function Header() {
             mobileOpen ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
         />
-
+ 
         {/* Side panel */}
         <div
           className={`fixed top-0 right-0 h-full w-[80%] max-w-[340px] bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${

@@ -62,7 +62,7 @@ const LoansFinanceLinks = [
     title: "Preventive Care",
     href: "#",
   }
-];
+]; 
 
 export default function Footer() {
   return (

@@ -26,7 +26,7 @@ export default function Location() {
                                     <FaRegClock size={16} className="text-[#c9a25f] flex-shrink-0 mt-[5px]" />
                                     <p className="xl:text-[20px] lg:text-[20px] text-[16px] font-normal text-[var(--text-color1)] xl:leading-[30px] lg:leading-[30px] leading-[24px]">
                                         Hours: Mon–Thu 9:00am to 5:00pm
-                                        <br />
+                                        <br /> 
                                         ( Fri 9:00am to 1:00pm)
                                     </p>
                                 </div>
