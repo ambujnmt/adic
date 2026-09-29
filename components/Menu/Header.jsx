@@ -8,16 +8,16 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   /* ---------- desktop dropdown states ---------- */
-  const [admissionsOpen, setAdmissionsOpen] = useState(false);
-  const [admissiontabOpen, setAdmissiontabOpen] = useState(false); 
-  const [learnerOpen, setLearnerOpen] = useState(false);  
-  const [moreOpen, setMoreOpen] = useState(false);  
+  const [cosmeticOpen, setCosmeticOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
+  const [dentalOpen, setDentalOpen] = useState(false);
+  const [patientOpen, setPatientOpen] = useState(false);  
 
   /* ---------- hover-close timers (desktop) ---------- */
-  const admissionsTimer = useRef(null);
-  const admissiontabTimer = useRef(null); 
-  const learnerTimer = useRef(null); 
-  const moreTimer = useRef(null); 
+  const cosmeticTimer = useRef(null);
+  const aboutTimer = useRef(null);
+  const dentalTimer = useRef(null);
+  const patientTimer = useRef(null); 
 
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
@@ -100,59 +100,32 @@ export default function Header() {
                     {/* // HOME */}
 
                     {/* About TAB */}
-                    <Link
-                      href="#"
-                      className="capitalize text-[14px] font-semibold text-black hover:text-[var(--secondary-color)] transition-colors py-2"
-                    >
-                      About
-                    </Link>
-                    {/* // About TAB */}
-
-                    {/* Smile Gallery TAB */}
-                    <Link
-                      href="#"
-                      className="capitalize text-[14px] font-semibold text-black hover:text-[var(--secondary-color)] transition-colors py-2"
-                    >
-                      Smile Gallery
-                    </Link>
-                    {/* // Smile Gallery TAB */}
-
-                    {/* General Dentistry TAB */}
-                    <Link
-                      href="#"
-                      className="capitalize text-[14px] font-semibold text-black hover:text-[var(--secondary-color)] transition-colors py-2"
-                    >
-                      General Dentistry
-                    </Link>
-                    {/* // General Dentistry TAB */}
-          
-                    {/* Cosmetic Dentistry TAB */}
                     <div
                       className="relative"
                       onMouseEnter={() => {
-                        clearTimeout(admissionsTimer.current);
-                        setAdmissionsOpen(true);
+                        clearTimeout(aboutTimer.current);
+                        setAboutOpen(true);
                       }}
                       onMouseLeave={() => {
-                        admissionsTimer.current = setTimeout(() => setAdmissionsOpen(false), 150);
+                        aboutTimer.current = setTimeout(() => setAboutOpen(false), 150);
                       }}
                     >
                       <Link
                         href="#"
                         className="capitalize flex items-center gap-1 text-[14px] font-semibold text-black hover:text-[var(--secondary-color)] transition-colors py-2 px-[7px]"
                       >
-                        Cosmetic Dentistry
+                        About
                         <FaChevronDown
                           size={10}
                           className={`mt-[2px] transition-transform duration-200 ${
-                            admissionsOpen ? "rotate-180" : ""
+                            aboutOpen ? "rotate-180" : ""
                           }`}
                         />
                       </Link>
 
                       <div
                         className={`absolute left-0 top-full w-[210px] rounded-md bg-white shadow-lg border border-gray-100 py-2 transition-all duration-200 origin-top ${
-                          admissionsOpen
+                          aboutOpen
                             ? "opacity-100 scale-100 visible"
                             : "opacity-0 scale-95 invisible pointer-events-none"
                         }`}
@@ -161,33 +134,39 @@ export default function Header() {
                           href="#"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
                         >
-                          Dropdown 1
-                        </Link> 
+                          Meet Dr. Harry Ashitey
+                        </Link>
                         <Link
                           href="#"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
                         >
-                          Dropdown 2
-                        </Link> 
+                          Our Team
+                        </Link>
                         <Link
                           href="#"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
                         >
-                          Dropdown 3
-                        </Link> 
+                          Our Office
+                        </Link>
+                        <Link
+                          href="#"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
+                        >
+                          Technology
+                        </Link>
                       </div>
                     </div>
-                    {/* // Cosmetic Dentistry TAB */} 
+                    {/* // About TAB */}
 
                     {/* Dental Implants TAB */}
                     <div
                       className="relative"
                       onMouseEnter={() => {
-                        clearTimeout(admissiontabTimer.current);
-                        setAdmissiontabOpen(true);
+                        clearTimeout(dentalTimer.current);
+                        setDentalOpen(true);
                       }}
                       onMouseLeave={() => {
-                        admissiontabTimer.current = setTimeout(() => setAdmissiontabOpen(false), 150);
+                        dentalTimer.current = setTimeout(() => setDentalOpen(false), 150);
                       }}
                     >
                       <Link
@@ -198,49 +177,153 @@ export default function Header() {
                         <FaChevronDown
                           size={10}
                           className={`mt-[2px] transition-transform duration-200 ${
-                            admissiontabOpen ? "rotate-180" : ""
+                            dentalOpen ? "rotate-180" : ""
                           }`}
                         />
                       </Link>
 
                       <div
                         className={`absolute left-0 top-full w-[210px] rounded-md bg-white shadow-lg border border-gray-100 py-2 transition-all duration-200 origin-top ${
-                          admissiontabOpen
+                          dentalOpen
                             ? "opacity-100 scale-100 visible"
                             : "opacity-0 scale-95 invisible pointer-events-none"
                         }`}
                       >
                         <Link
-                          href="#"
+                          href="/dentalImplants/dentalImplants"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
                         >
-                          Dropdown 1
+                          Dental Implants
+                        </Link>
+                        <Link
+                          href="/singleDentalImplants/singleDentalImplants"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
+                        >
+                          Single Dental Implants
                         </Link>
                         <Link
                           href="#"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
                         >
-                          Dropdown 2
+                          Implant-Supported Dentures
                         </Link>
                         <Link
                           href="#"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
                         >
-                          Dropdown 3
+                          All-on-X / Full-Arch
+                        </Link>
+                        <Link
+                          href="#"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
+                        >
+                          Bone Grafting
+                        </Link>
+                        <Link
+                          href="#"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
+                        >
+                          Implant FAQs
                         </Link>
                       </div>
                     </div>
                     {/* // Dental Implants TAB */} 
 
+                    {/* Cosmetic Dentistry TAB */}
+                    <div
+                      className="relative"
+                      onMouseEnter={() => {
+                        clearTimeout(cosmeticTimer.current);
+                        setCosmeticOpen(true);
+                      }}
+                      onMouseLeave={() => {
+                        cosmeticTimer.current = setTimeout(() => setCosmeticOpen(false), 150);
+                      }}
+                    >
+                      <Link
+                        href="#"
+                        className="capitalize flex items-center gap-1 text-[14px] font-semibold text-black hover:text-[var(--secondary-color)] transition-colors py-2 px-[7px]"
+                      >
+                        Cosmetic Dentistry
+                        <FaChevronDown
+                          size={10}
+                          className={`mt-[2px] transition-transform duration-200 ${
+                            cosmeticOpen ? "rotate-180" : ""
+                          }`}
+                        />
+                      </Link>
+
+                      <div
+                        className={`absolute left-0 top-full w-[210px] rounded-md bg-white shadow-lg border border-gray-100 py-2 transition-all duration-200 origin-top ${
+                          cosmeticOpen
+                            ? "opacity-100 scale-100 visible"
+                            : "opacity-0 scale-95 invisible pointer-events-none"
+                        }`}
+                      >
+                        <Link
+                          href="/cosmeticDentistry/cosmeticDentistry"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
+                        >
+                          Cosmetic Dentistry
+                        </Link> 
+                        <Link
+                          href="#"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
+                        >
+                          Smile Makeovers
+                        </Link> 
+                        <Link
+                          href="#"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
+                        >
+                          Porcelain Veneers
+                        </Link> 
+                        <Link
+                          href="/crowns/crowns"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
+                        >
+                          Crowns
+                        </Link> 
+                        <Link
+                          href="#"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
+                        >
+                          Invisalign
+                        </Link> 
+                        <Link
+                          href="#"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
+                        >
+                          Teeth Whitening
+                        </Link> 
+                        <Link
+                          href="#"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
+                        >
+                          Cosmetic Bonding
+                        </Link> 
+                      </div>
+                    </div>
+                    {/* // Cosmetic Dentistry TAB */} 
+
+                    {/* General Dentistry TAB */}
+                    <Link
+                      href="#"
+                      className="capitalize text-[14px] font-semibold text-black hover:text-[var(--secondary-color)] transition-colors py-2"
+                    >
+                      General Dentistry
+                    </Link>
+                    {/* // General Dentistry TAB */}
+
                     {/* Patient Resources TAB */}
                     <div
                       className="relative"
                       onMouseEnter={() => {
-                        clearTimeout(moreTimer.current);
-                        setMoreOpen(true);
+                        clearTimeout(patientTimer.current);
+                        setPatientOpen(true);
                       }}
                       onMouseLeave={() => {
-                        moreTimer.current = setTimeout(() => setMoreOpen(false), 150);
+                        patientTimer.current = setTimeout(() => setPatientOpen(false), 150);
                       }}
                     >
                       <Link
@@ -251,14 +334,14 @@ export default function Header() {
                         <FaChevronDown
                           size={10}
                           className={`mt-[2px] transition-transform duration-200 ${
-                            moreOpen ? "rotate-180" : ""
+                            patientOpen ? "rotate-180" : ""
                           }`}
                         />
                       </Link>
 
                       <div
                         className={`absolute left-0 top-full w-[210px] rounded-md bg-white shadow-lg border border-gray-100 py-2 transition-all duration-200 origin-top ${
-                          moreOpen
+                          patientOpen
                             ? "opacity-100 scale-100 visible"
                             : "opacity-0 scale-95 invisible pointer-events-none"
                         }`}
@@ -267,23 +350,44 @@ export default function Header() {
                           href="#"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
                         >
-                          Dropdown 1
+                          New Patients
                         </Link>
                         <Link
                           href="#"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
                         >
-                          Dropdown 2
+                          Patient Forms
                         </Link>
                         <Link
                           href="#"
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
                         >
-                          Dropdown 3
+                          Financing
+                        </Link>
+                        <Link
+                          href="#"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
+                        >
+                          FAQs
+                        </Link>
+                        <Link
+                          href="#"
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-purple-50 hover:text-[var(--primary-color)] transition-colors whitespace-normal break-words"
+                        >
+                          Blog / Education Center
                         </Link>
                       </div>
                     </div>
                     {/* // Patient Resources TAB */}
+
+                    {/* Smile Gallery TAB */}
+                    <Link
+                      href="#"
+                      className="capitalize text-[14px] font-semibold text-black hover:text-[var(--secondary-color)] transition-colors py-2"
+                    >
+                      Smile Gallery
+                    </Link>
+                    {/* // Smile Gallery TAB */} 
 
                     {/* Contact TAB */}
                     <Link
@@ -361,19 +465,89 @@ export default function Header() {
 
             {/* About */}
             <div className="border-b border-gray-100">
-              <Link href="#" className="block py-2 text-sm font-medium text-[var(--text-color)]">
-                About
-              </Link>
+              <div
+                className="flex items-center justify-between py-2 cursor-pointer"
+                onClick={() => toggleMainTab("m_About")}
+              >
+                <span className="capitalize text-sm font-medium text-[var(--text-color)]">About</span>
+                <FaChevronDown
+                  size={12}
+                  className={`mr-4 text-gray-500 transition-transform duration-300 ${
+                    openMainTab === "m_About" ? "rotate-180" : ""
+                  }`}
+                />
+              </div>
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out bg-gray-50 ${
+                  openMainTab === "m_About" ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+                }`}
+              >
+                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Meet Dr. Harry Ashitey</Link>
+                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Our Team</Link>
+                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Our Office</Link>
+                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Technology</Link>
+              </div>
             </div>
             {/* // About */}
 
-            {/* Smile Gallery */}
+            {/* Dental Implants TAB */}
             <div className="border-b border-gray-100">
-              <Link href="#" className="block py-2 text-sm font-medium text-[var(--text-color)]">
-                Smile Gallery
-              </Link>
+              <div
+                className="flex items-center justify-between py-2 cursor-pointer"
+                onClick={() => toggleMainTab("m_Dental")}
+              >
+                <span className="capitalize text-sm font-medium text-[var(--text-color)]">Dental Implants</span>
+                <FaChevronDown
+                  size={12}
+                  className={`mr-4 text-gray-500 transition-transform duration-300 ${
+                    openMainTab === "m_Dental" ? "rotate-180" : ""
+                  }`}
+                />
+              </div>
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out bg-gray-50 ${
+                  openMainTab === "m_Dental" ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+                }`}
+              >
+                <Link href="/dentalImplants/dentalImplants" className="block py-3 pl-4 text-sm text-gray-700">Dental Implants</Link>
+                <Link href="/singleDentalImplants/singleDentalImplants" className="block py-3 pl-4 text-sm text-gray-700">Single Dental Implants</Link>
+                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Implant-Supported Dentures</Link>
+                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">All-on-X / Full-Arch</Link>
+                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Bone Grafting</Link>
+                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Implant FAQs</Link>
+              </div>
             </div>
-            {/* // Smile Gallery */}
+            {/* // Dental Implants TAB */}
+
+            {/* Cosmetic Dentistry TAB */}
+            <div className="border-b border-gray-100">
+              <div
+                className="flex items-center justify-between py-2 cursor-pointer"
+                onClick={() => toggleMainTab("m_Cosmetic")}
+              >
+                <span className="capitalize text-sm font-medium text-[var(--text-color)]">Cosmetic Dentistry</span>
+                <FaChevronDown
+                  size={12}
+                  className={`mr-4 text-gray-500 transition-transform duration-300 ${
+                    openMainTab === "m_Cosmetic" ? "rotate-180" : ""
+                  }`}
+                />
+              </div>
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out bg-gray-50 ${
+                  openMainTab === "m_Cosmetic" ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+                }`}
+              >
+                <Link href="/cosmeticDentistry/cosmeticDentistry" className="block py-3 pl-4 text-sm text-gray-700">Cosmetic Dentistry</Link>
+                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Smile Makeovers</Link>
+                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Porcelain Veneers</Link>
+                <Link href="/crowns/crowns" className="block py-3 pl-4 text-sm text-gray-700">Crowns</Link>
+                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Invisalign</Link>
+                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Teeth Whitening</Link>
+                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Cosmetic Bonding</Link>
+              </div>
+            </div>
+            {/* // Cosmetic Dentistry TAB */} 
 
             {/* General Dentistry */}
             <div className="border-b border-gray-100">
@@ -381,85 +555,43 @@ export default function Header() {
                 General Dentistry
               </Link>
             </div>
-            {/* // General Dentistry */}
+            {/* // General Dentistry */} 
 
-            {/* Cosmetic Dentistry TAB */}
-            <div className="border-b border-gray-100">
-              <div
-                className="flex items-center justify-between py-2 cursor-pointer"
-                onClick={() => toggleMainTab("about")}
-              >
-                <span className="capitalize text-sm font-medium text-[var(--text-color)]">Cosmetic Dentistry</span>
-                <FaChevronDown
-                  size={12}
-                  className={`mr-4 text-gray-500 transition-transform duration-300 ${
-                    openMainTab === "about" ? "rotate-180" : ""
-                  }`}
-                />
-              </div>
-              <div
-                className={`overflow-hidden transition-all duration-300 ease-in-out bg-gray-50 ${
-                  openMainTab === "about" ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
-                }`}
-              >
-                <Link href="/aboutMit_Adt/about" className="block py-3 pl-4 text-sm text-gray-700">Dropdown 1</Link>
-                <Link href="/aboutMit_Adt/vision" className="block py-3 pl-4 text-sm text-gray-700">Dropdown 2</Link>
-                <Link href="/aboutMit_Adt/leadership" className="block py-3 pl-4 text-sm text-gray-700">Dropdown 3</Link>
-              </div>
-            </div>
-            {/* // Cosmetic Dentistry TAB */}
-
-            {/* Dental Implants TAB */}
-            <div className="border-b border-gray-100">
-              <div
-                className="flex items-center justify-between py-2 cursor-pointer"
-                onClick={() => toggleMainTab("cdoe")}
-              >
-                <span className="capitalize text-sm font-medium text-[var(--text-color)]">Dental Implants</span>
-                <FaChevronDown
-                  size={12}
-                  className={`mr-4 text-gray-500 transition-transform duration-300 ${
-                    openMainTab === "cdoe" ? "rotate-180" : ""
-                  }`}
-                />
-              </div>
-              <div
-                className={`overflow-hidden transition-all duration-300 ease-in-out bg-gray-50 ${
-                  openMainTab === "cdoe" ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
-                }`}
-              >
-                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Dropdown 1</Link>
-                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Dropdown 2</Link>
-                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Dropdown 3</Link>
-              </div>
-            </div>
-            {/* // Dental Implants TAB */}  
- 
             {/* Patient Resources TAB */}
             <div className="border-b border-gray-100">
               <div
                 className="flex items-center justify-between py-2 cursor-pointer"
-                onClick={() => toggleMainTab("programs")}
+                onClick={() => toggleMainTab("m_Patient")}
               >
                 <span className="capitalize text-sm font-medium text-[var(--text-color)]">Patient Resources </span>
                 <FaChevronDown
                   size={12}
                   className={`mr-4 text-gray-500 transition-transform duration-300 ${
-                    openMainTab === "programs" ? "rotate-180" : ""
+                    openMainTab === "m_Patient" ? "rotate-180" : ""
                   }`}
                 />
               </div>
               <div
                 className={`overflow-hidden transition-all duration-300 ease-in-out bg-gray-50 ${
-                  openMainTab === "programs" ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+                  openMainTab === "m_Patient" ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Dropdown 1</Link> 
-                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Dropdown 2</Link>
-                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Dropdown 3 </Link>
+                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">New Patients</Link> 
+                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Patient Forms</Link>
+                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Financing </Link>
+                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">FAQs </Link>
+                <Link href="#" className="block py-3 pl-4 text-sm text-gray-700">Blog / Education Center </Link>
               </div>
             </div>
             {/* // Patient Resources TAB */} 
+
+            {/* Smile Gallery */}
+            <div className="border-b border-gray-100">
+              <Link href="#" className="block py-2 text-sm font-medium text-[var(--text-color)]">
+                Smile Gallery
+              </Link>
+            </div>
+            {/* // Smile Gallery */}  
 
             {/* Contact */}
             <div className="border-b border-gray-100">
