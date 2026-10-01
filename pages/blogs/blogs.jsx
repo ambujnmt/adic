@@ -1,13 +1,14 @@
-import React, { useState } from "react";
 import Header from "../../components/Menu/Header";
 import Footer from "../../components/Menu/Footer";
-import Courses from "../../components/InnerPages/Courses/Courses";
+import TopBar from "../../components/Menu/TopBar";
+import Blogs from "../../components/InnerPages/Blogs/Blogs";
 
-export default function courses() {
+export default function blogs() {
     return (
         <>
+            <TopBar />
             <Header /> 
-            <Courses />  
+            <Blogs />
             <Footer /> 
         </>
     );
